@@ -3,7 +3,7 @@ import { projectsData } from "../lib/data";
 
 export default function Projects() {
   return (
-    <section id="projects" className="scroll-mt-28 mb-28 mx-auto max-w-[45rem]">
+    <section id="projects" className="scroll-mt-28 mb-28 mx-auto max-w-[45rem] px-4">
       <h2 className="text-3xl font-medium capitalize mb-8 text-center">
         My Projects
       </h2>
