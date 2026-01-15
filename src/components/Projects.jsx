@@ -3,58 +3,52 @@ import { projectsData } from "../lib/data";
 
 export default function Projects() {
   return (
-    <section id="projects" className="scroll-mt-28 mb-28 mx-auto max-w-[45rem] px-4">
+    <section
+      id="projects"
+      className="mx-auto max-w-[62rem] scroll-mt-28 mt-28 px-4"
+    >
       <h2 className="text-3xl font-medium capitalize mb-8 text-center">
         My Projects
       </h2>
 
-      <div>
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>
             <Project {...project} />
           </React.Fragment>
         ))}
       </div>
-
-      {/* <div className="max-w-[45rem] mx-auto">
-        {projectsData.map((project, index) => (
-          <div key={index} className="mb-8">
-            <img
-              src={project.imageUrl}
-              alt={project.title}
-              className="w-32 h-32 object-cover"
-            />
-            <p>{project.description}</p>
-            <p>{project.tags}</p>
-          </div>
-        ))}
-      </div> */}
     </section>
   );
 }
 
 function Project({ title, description, tags, imageUrl }) {
   return (
-    <article className="bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 relative sm:h-[20rem] mb-2 sm:mb-8 last:mb-0">
-      <div className="py-4 pb-6 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full">
+    <div className="bg-gray-50 border border-black/5 rounded-md shadow-md flex flex-col h-full">
+      <img
+        src={imageUrl}
+        alt={title}
+        className="mb-4 w-full object-cover h-44 rounded-t-md"
+      />
+
+      <div className="px-3 flex flex-col h-full">
         <h3 className="text-2xl font-semibold">{title}</h3>
-        <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
-        <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
+
+        <p className="mt-2 text-gray-700 leading-relaxed line-clamp-4">
+          {description}
+        </p>
+
+        <ul className="flex flex-wrap gap-2 mt-auto pt-4 mb-3">
           {tags.map((tag, index) => (
             <li
-              className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full"
               key={index}
+              className="bg-black/70 text-xs px-3 py-1 uppercase tracking-wider text-white rounded-full"
             >
               {tag}
             </li>
           ))}
         </ul>
-        <img
-          className="absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl"
-          src={imageUrl}
-          alt={title}
-        />
       </div>
-    </article>
+    </div>
   );
 }

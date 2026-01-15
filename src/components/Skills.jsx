@@ -6,7 +6,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="scroll-mt-28 sm:mb-28 max-w-[40rem] mx-auto text-center"
+      className="scroll-mt-28 mt-28 sm:mb-28 max-w-[40rem] mx-auto text-center"
     >
       <h2 className="text-3xl font-medium capitalize mb-8 text-center">
         My Skills

@@ -1,6 +1,5 @@
 import corpcommentImg from "../assets/corpcomment.png";
 import rmtdevImg from "../assets/rmtdev.png";
-import wordanalyticsImg from "../assets/wordanalytics.png";
 import { GiGraduateCap } from "react-icons/gi";
 import { MdWork } from "react-icons/md";
 import { FaSchool } from "react-icons/fa";
@@ -52,7 +51,7 @@ export const projectsData = [
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: rmtdevImg,
   },
 ];
 
@@ -61,12 +60,13 @@ export const skillData = [
   "CSS",
   "JavaScript",
   "TypeScript",
-  "React",
+  "ReactJS",
   "SQL",
   "Microsoft office",
   "Git",
   "GitHub",
   "Tailwind CSS",
+  "Node.js",
   "PHP",
   "Python",
   "Figma",

@@ -12,7 +12,7 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="scroll-mt-28 sm:mb-28 max-w-[60rem] mx-auto text-center"
+      className="scroll-mt-28 mt-28 sm:mb-28 max-w-[60rem] mx-auto text-center"
     >
       <h2 className="text-3xl font-medium capitalize mb-8 text-center">
         My Experience
@@ -25,7 +25,7 @@ export default function Experience() {
             contentStyle={{
               background: "#f9fafb",
               boxShadow: "none",
-              border: "1px solid rgba(0, 0, 0, 0.2)",
+              border: "1px solid rgba(0, 0, 0, 0.06)",
               textAlign: "left",
               padding: "1.3rem 2rem",
             }}
