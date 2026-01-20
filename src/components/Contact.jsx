@@ -76,9 +76,9 @@ export default function Contact() {
       id="contact"
       className="scroll-mt-28 mt-28 mb-28 max-w-[45rem] mx-auto text-center px-4"
     >
-      <h2 className="text-3xl font-medium capitalize mb-8">Contact Me</h2>
+      <h2 className="text-3xl font-medium capitalize mb-8 dark:text-white">Contact Me</h2>
 
-      <p className="text-gray-700 -mt-6">
+      <p className="text-gray-700 -mt-6 dark:text-white">
         Please contact me directly at{" "}
         <a className="underline" href="mailto:example@gmail.com">
           example@gmail.com
@@ -97,7 +97,7 @@ export default function Contact() {
         />
 
         <input
-          className="h-14 mb-3 px-4 rounded-lg bg-gray-50 border-black/20 border transition-all"
+          className="h-14 mb-3 px-4 rounded-lg bg-gray-50 border-gray-300 border-2 transition-all"
           name="name"
           type="text"
           required
@@ -106,7 +106,7 @@ export default function Contact() {
         />
 
         <input
-          className="h-14 mb-3 px-4 rounded-lg bg-gray-50 border-black/20 border transition-all"
+          className="h-14 mb-3 px-4 rounded-lg bg-gray-50 border-gray-300 border-2 transition-all"
           name="email"
           type="email"
           required
@@ -115,7 +115,7 @@ export default function Contact() {
         />
 
         <textarea
-          className="h-52 mb-3 rounded-lg bg-gray-50 border-black/20 border p-4 transition-all"
+          className="h-52 mb-3 rounded-lg bg-gray-50 border-gray-300 border-2 p-4 transition-all"
           name="message"
           placeholder="Your message"
           required
@@ -130,7 +130,7 @@ export default function Contact() {
             ${
               isSubmitting
                 ? "bg-gray-400 cursor-not-allowed"
-                : "bg-gray-900 text-white hover:scale-110 hover:bg-gray-950"
+                : "bg-gray-900 text-white hover:scale-110 hover:bg-gray-950 dark:bg-gray-100 dark:text-black"
             }`}
         >
           {isSubmitting ? "Sending..." : "Submit"}

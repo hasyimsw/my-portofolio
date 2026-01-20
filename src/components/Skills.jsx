@@ -15,7 +15,7 @@ export default function Skills() {
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800 ">
         {skillData.map((skill, index) => (
           <li
-            className="bg-gray-50 border border-black/[0.2] rounded-sm px-5"
+            className="bg-gray-50 border-2 border-gray-200 rounded-md px-5"
             key={index}
           >
             {skill}
